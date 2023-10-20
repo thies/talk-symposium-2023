@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Discussion</title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="tweaks.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+					<section data-markdown data-background-image="imgs/door.jpg">
+						<textarea data-template>
+							## <span class='subtitle notbold'>Real Estate Finance &amp; Investment <br>Symposium, HK 2023</span><br /><br><br/>
+
+
+							## Discussion <span class='subtitle'><br>Combining Algorithmic and<br/>Stochastic DataModels<span>
+
+
+							<br>
+
+							## <span class='subtitle notbold'>Thies Lindenthal</span><br />
+
+
+														<br>
+
+							<img src='imgs/logo.png' width=370>
+						</textarea>
+					</section>
+
+					<section data-markdown data-background-image="imgs/fig1.png">
+						<textarea data-template>
+							<mark>&nbsp;&ldquo;In real estate we do not have Big Data—So we need structure.&rdquo; ~M.F.&nbsp;</mark>
+					</textarea>
+					</section>
+
+
+					<section data-markdown>
+						<textarea data-template>
+								# Best of two worlds
+
+								* Combination of two cultures of statistical modeling
+									- Statistical models using stochastic data models (econometric models, like linear regression)
+									- Algorithmic models (ML)
+								* Complementary strenghts
+									- Econometric models can explicitly control for spatial and temporal correlations, and unobserved heterogeneity
+									- ML algorithms are &ldquo;easy-to-use&rdquo;, and can describe complex non-linear relations and interactions
+
+							</textarea>
+						</section>
+
+
+
+
+
+<section data-markdown>
+	<textarea data-template>
+		### components
+
+		* (1) common trend (DGP)
+		* (2) property type trend (DGP)
+		* (3) spatial component (DGP)
+		* (4) property random effect for unobserved heterogeneity (DGP)
+		* (5) property characteristics (ML / DGP)
+
+	</textarea>
+</section>
+
+<section data-markdown>
+	<textarea data-template>
+
+		## Phoenix <span class='subtitle'><br>Heat maps for single family homes based on neural network <br>(<a href='https://doi.org/10.1016/j.jhe.2022.101872'>Clapp &amp; Lindenthal, JHE, 2022</a>)</span>
+
+		<div class='figure'>
+			<img src='https://www.lindenthal.eu/assets/images/lv_loop.gif' width='70%'>
+		</div>
+	</textarea>
+</section>
+
+
+<section data-markdown data-background-image='imgs/phoenix.png'>
+	<textarea data-template>
+		## <br> <br> <br><br> <span class="darkonlight">Spatial Component</span> <span class='subtitle darkonlight'><br>$ s^x = cos(Lat) × cos(Lon), s^y = cos(Lat) × sin(Lon), s^z = sin(Lat)$</span>
+	</textarea>
+</section>
+
+<section data-markdown data-background-image='imgs/new-space.jpg'>
+	<textarea data-template>
+		## <span class="darkonlight">Cost of Structure</span><br><span class='subtitle darkonlight'><br>Interaction effects between components? Location and property characteristics are linked</span>
+
+		<br><br><br>
+	</textarea>
+</section>
+
+
+
+
+		<section data-markdown>
+			<textarea data-template>
+
+
+
+
+					In our mixed econometric machine learning approach we replace the linear function for
+the property characteristics component (the 5th component) by a neural network, allowing
+for non-linear relations and interaction effects. One advantage of using a parametric ML
+algorithm such as a neural network is that the joint model can still be estimated using
+for example Bayesian methods, so parameter estimates and credible intervals are readily
+available. This is not possible for non-parametric ML algorithms, especially tree-based ones
+
+</textarea>
+</section>
+
+
+
+
+				<section data-markdown data-background-image="imgs/liv-counting.jpg">
+					<textarea data-template>
+						<br>
+						<br>
+
+						## <mark>3 thoughts</mark><span class="subtitle"><br/></span>
+
+						<br>
+
+						* <span class="transparent70">&nbsp;&nbsp;1. Real Estate is as diverse, multi-dimensional and interconnected as the societies it serves.</mark>
+						* <span class="transparent70">&nbsp;&nbsp;2. To assess and optimise, we need to quantify first.</mark>
+						* <span class="transparent70">&nbsp;&nbsp;3. Over-simplification of complex systems is dangerous.</mark>
+
+				</textarea>
+				</section>
+
+
+
+
+				<section data-markdown data-background-image="imgs/kings-college.jpg">
+					<textarea data-template>
+					<span class='transparent'>
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<span class='source transparent30'>Photo: <a href="https://www.flickr.com/photos/alexbrn/">Alex Brown</a></span>
+					</span>
+				</textarea>
+				</section>
+
+				<section data-markdown data-background-image="imgs/kings-chapel-vault.jpg" data-background-size="contain">
+					<textarea data-template>
+					<span class='transparent'>
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<span class='source'>Photo: <a href="https://www.flickr.com/photos/seier/">Seier</a></span>
+					</span>
+				</textarea>
+				</section>
+
+				<section data-markdown data-background-image="imgs/new-space.jpg" data-background-size="contain">
+					<textarea data-template>
+
+					## <mark>people and environment</mark><br><span class="subtitle white"><br/>Impact on others growing concern: How to create green and healthy spaces?</span>
+
+					* <span class="transparent70">&nbsp;&nbsp;Tenants expect sustainable buildings (Fuerst et al.)</span>
+					* <span class="transparent70">&nbsp;&nbsp;Health not an afterthought anymore.</span>
+					* <span class="transparent70">&nbsp;&nbsp;Quality can still compete with home office.</span>
+
+					<br>
+					<br>
+				</textarea>
+				</section>
+
+
+
+				<section data-markdown data-background-image="imgs/mall.jpg" data-background-size="contain">
+					<textarea data-template>
+
+					## <mark>Quantification</mark><br><span class="subtitle"><br/><span class="white">Measuring economic activity inside buildings easier than ever.</span></span>
+
+					* <span class="white"> Tracking of shoppers inside Beijing mall based on CCTV, linked with till data (Jiabin Wei, 2022)</span>
+					* <span class="white"> Modelling of synergies and optimisation of tenant mix</span>
+					<br><br><br><br>
+					<span class='source transparent50'>Photo: <a href="https://www.flickr.com/photos/musicsthename/">Ava R&nbsp;&nbsp;</a></span>
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template >
+					<h2>Assessing Potential<span class="subtitle"><br />Retail vacancy data is scarce in the UK: So we analysed high street windows.<br /></span></h2>
+
+					<p class='source'><img src="imgs/mphil-diss-emma.png"> Source: Emma Waterhouse “Applying Machine Learning and Image Classification to the Built Environment: The Case of UK High Streets”. Photos: Google Street View</p>
+
+					* Which neighbourhoods of the UK are flourishing: Economic prosperity, influx of capital and people, tourism?
+
+					* Where are high streets in decline?
+				</textarea>
+				</section>
+
+				<section class="white" data-background-color="#ffffff">
+					<h2>Our Toolbox<span class="subtitle"><br />Computer vision + Machine Learning (ML) + trad. econometrics<br /></span></h2>
+					<img src="imgs/research_feature_vectors.png">
+				</section>
+
+				<section data-markdown data-background-image="imgs/styles-uk.png" data-background-size="contain">
+				</section>
+
+
+			<section data-markdown data-background-image="imgs/vinery_road.jpg" >
+				<textarea data-template>
+
+					## <mark>Quantifying style(s)</mark> <span class="subtitle white"><br><br>&ldquo;Building Better, Building Beautiful&rdquo;? </span>
+
+					* <span class='transparent70'>The UK Government has been emphasising the "beauty" of homes and neighborhoods: _"We should then build as our Georgian and Victorian forebears built [...] All objections to new building would slip away in the sheer relief of the public"_.</span>
+					* <span class="transparent70"> Not supported by transaction data <a href="https://link.springer.com/article/10.1007/s11146-021-09845-1">(Lindenthal & Johnson, 2021)</a></span>
+
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+
+				</textarea>
+			</section>
+
+
+				<section data-markdown data-background-image="imgs/terracotta.jpg" data-background-size="contain">
+					<textarea data-template>
+						## <mark>Diversity</mark><br><span class="subtitle white"><br/>Tenants' needs and preferences differ!</span>
+
+						* <span class='transparent70'>If you look close enough, no one is the same.</span>
+						* <span class='transparent70'>One size fits all? No.</span>
+				</textarea>
+				</section>
+
+				<section data-markdown data-background-image='imgs/hj.png' data-background-video2="imgs/PXL_20210310_232954432.mp4" data-background-video-loop data-background-video-muted>
+					<textarea data-template>
+						## <span class="transparent70">One taste for all?</span><span class=" transparent70 subtitle"><br/>How diverse are aesthetic preferences? (Lindenthal, Hoeltken &amp; Wang)</span>
+
+						* <span class="transparent70">App available at https://4walls.cremll.com</span>
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## Some general trends...<span class="subtitle"><br/>People like greenery, space, good quality&mdash;and often historic buildings.</span>
+						<div class="figure">
+							<img src="imgs/example_like.png" height="500">
+						</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Better not...<span class="subtitle"><br/>Neglected, cheap materials, mixed styles.</span>
+						<div class="figure">
+							<img src="imgs/example_dislike.png" height="500">
+						</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## The Marmite homes<span class="subtitle"><br/>The really interesting cases: People don't agree. Taste, largely, remains personal.</span>
+
+						<div class="figure">
+						<img src="imgs/example_mixed.png" height="500">
+						</div>
+					</textarea>
+				</section>
+
+				<section data-markdown data-background-image="imgs/HK-trader-2.jpg" data-background-size="contain">
+					<textarea data-template>
+						## <mark>&nbsp;&nbsp;No over-simplification&nbsp;&nbsp;</mark> <span class="subtitle"><br/><br/><span class="transparent70">&nbsp;&nbsp;Stronger analysis with bigger and multi-dimensional data</span></span>
+
+					</textarea>
+				</section>
+
+
+
+				<section data-markdown >
+			<textarea data-template>
+				## From utility to investment returns<span class="subtitle"><br/>Value is created along a long chain: people &rarr; companies &rarr; buildings &rarr; portfolios.</span>
+
+				* Traditonal approaches have to simplify—much information is lost.
+
+				<p class="figure">
+					<img src="imgs/value-chain.png" height="450">
+				</p>
+			</textarea>
+		</section>
+
+	<section data-markdown >
+	<textarea data-template>
+		## Predicting investment returns<span class="subtitle"><br/>ML finds predictability where traditional approaches fail (Leow &amp; Lindenthal, 2023).</span>
+
+		* REITs are more predictable than other stocks. Implications for multi-asset portfolio allocations.
+
+		<p class="figure">
+			<img src="imgs/value-chain-step1.svg" height="450">
+		</p>
+
+
+	</textarea>
+</section>
+
+<section data-markdown >
+<textarea data-template>
+	## Deeper analysis of performance<span class="subtitle"><br/> Detailed building data w/o aggregation improves benchmarking at company level.</span>
+
+	* Stars and hogs cannot hide in crude aggregates. More details and interactions considered.
+
+	<p class="figure">
+		<img src="imgs/value-chain-step2.svg" height="450">
+	</p>
+</textarea>
+</section>
+
+
+<section data-markdown >
+<textarea data-template>
+	## Full chain: Tenant &rarr; investor<span class="subtitle"><br/>Benchmarking and optimising without loss of detail. Many KPIs possible.</span>
+
+	* Where is value created? Learn from **ALL** data to improve health, sustainability and bottom line.
+
+	<p class="figure">
+		<img src="imgs/value-chain-step3.svg" height="450">
+	</p>
+</textarea>
+</section>
+
+
+				<section data-markdown data-background-image='imgs/clare_small.jpg'>
+			<textarea data-template>
+				## <mark>Summing up</mark><span class="subtitle white"><br><br/>To empirically test big questions we need big data</span>
+
+
+				* <span class="transparent70">Real Estate is diverse and multi-dimensional. Buildings never stand in isolation but are closely connected with communities, the environment, and the economy. These links matter!</span>
+				* <span class="transparent70">New data and machine learning allow us to quantify the wealth of ties between the built environment and society.</span>
+
+
+			</textarea>
+		</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				transition: 'none',
+				width: 1244,
+				height: 700,
+				margin: 0.1,
+				math: {
+					mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					// pass other options into `MathJax.Hub.Config()`
+					TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath],
+				transition: 'none'
+			});
+		</script>
+	</body>
+</html>
